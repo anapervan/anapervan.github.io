@@ -2,14 +2,104 @@
 layout: archive
 author_profile: true
 ---
-<h2>Projects</h2>
+<h2>Research</h2>
 
 <body>
-<p>In progress</p>
-<p>Algorithmic robot design - synthetic cell collaboration</p>
-<p>reinforcement learning in particle robots</p>
-<p>smartcles - stochastic robotics</p>
-<p>active matter</p>
+  <p>Artificial life is often thought of as complicated, expensive, large-scale imple-
+mentations of humanoid robots, but the first life-like robotic behaviors may be the result of
+simple interactions collectively producing functional abilities.
+
+ <br><br>Both the design of sensing, computation, and actuation components of <i>individual</i> robots, and
+predicting and understanding the <i>collective</i> interactions of groups of particles
+composed of these elements, are key to developing properties of self-organization
+and emergent computation.</p>
+
+<h3>Algorithmic Robot Design</h3>
+<p>Robots traditionally require three elements: sensors, computation, and actua-
+tors. To algorithmically design a robot, one might start with an existing library
+of sensors and actuators and compare the task performance of robots consisting
+of every possible combination of these components. This method is not only in-
+elegant, but it can quickly become infeasible—and it doesn’t take into account
+the actual capabilities of each of these components. So how should individual
+robots be designed for specific tasks?
+
+<br><br><b>Design Sensitivities.</b>
+It is clear that robot designs are sensitive to changes, so I pose the problem of
+determining the sensitivity of a design to different components. For example,
+how does one determine the sensitivity of the design of a robotic leg (intended
+for walking) to the introduction of a knee? What if the knee is a simple revolute
+joint? What if the knee has an actuator?
+
+<br><br> I am currently investigating this problem, both through the lens of
+reinforcement learning and using methods from switched systems theory.
+
+<br><br><b>Combinatoric Components.</b>
+Another facet of robot design is the combinatorics of components. Sensors
+and actuators are by no means independent components on a
+robot. For example, a camera (which is a sensor) is useless at night without
+a flashlight (an actuator, of sorts). Likewise, a flashlight is of no benefit to a
+robot that doesn’t have a camera.
+
+<br><br>For control, exploitable sensor-actuator pairs are valuable. In my Master's Thesis work [],
+as well as a book chapter [], I introduced a method for
+designing a robot when given a finite library of sensors and actuators.
+
+
+<br><br><b>Information Flow.</b>
+A central idea in robot design is information flow from the environment to
+the robot. Starting with a body and a desired task, what is their relationship
+without control? The K-L divergence (sometimes called the relative entropy)
+between the initial conditions of the robot and the goal task is the maximum
+level for this task. If this is a small number (meaning that the goal task is not
+far from the initial conditions of the robot), then not much control information
+is necessary. In other words, if a task is well embodied by a robot, only a simple
+control policy is necessary to execute it. Otherwise more information, in the
+form of a complex control policy, is necessary.
+
+<br><br><i>Task embodiment</i> is a measure of how much information a body encodes
+about a task. Changing a robot design can be thought of in terms of moving
+task information from the centralized computations in the control calculations
+to embedded computation in the physical body. This principle of information
+flow, and trade-offs of having control information be in the physical design of
+the body or in the computerized controller of the robot, are one way to formally
+think about robot designs. I introduced the concept of task embodiment in two publictions:
+[WAFR], [RAL].
+</p>
+
+<h3>Collective Behaviors and Emergent Computation</h3>
+<p>I am interested in predicting the emergent properties of a collection of individual
+robots, and synthesizing these behaviors through the design of algorithmic and
+physical properties of each individual. The main element of emergent
+behavior is the ability of the local sensing and actuation of (potentially simple) individuals
+to result in global ensemble-level capabilities that are greater than what should
+be expected from such simple capabilities. How can a methodology be formed with
+which goals for the ensemble can be transformed into physical designs of individual
+robots?
+
+<br><br><b>Stochastic Robotics.</b>
+First, emergent behaviors must be able to be identified and exploited. This was demonstrated
+in the [SR] paper, where directed locomotion was achieved through stochastic interactions.
+A nonparametric algorithm was used to take advantage of broken symmetries in the system
+and execute sophisticated collective behaviors, all with minimal sensing and actuation capabilities.
+
+<br><br><b>Reinforcement Learning in Particle Robots.</b>
+Through collaboration with a chemical engineering lab at MIT, including
+<a href="https://albert-t-liu.com/">Albert T. Liu</a>, I have been
+considering the problem of designing microscopic robots (known as synthetic cells)
+ to achieve a complex goal (e.g., mimicking the immune system by seeking invaders)
+in a complex environment (e.g., the circulatory system), where they might have
+to change their control policy, communicate with each other, and deal with uncertainty
+including false positives and negatives --- all with minimal capabilities and only
+a few bits of memory.
+
+<br><br>In a paper that has not yet been published, I demonstrate that synthetic
+cells can work together to find a target (or a moving target, or multiple targets)
+by performing a reinforcement learning-type alrogithm with which they update their
+control policy based on randomized envounters with other cells. As the synthetic
+cells work together to find the target(s) their interactions as an ensemble
+function as a physical implementation of a Bayesian update. That is, the particles
+act as a particle filter.</p>
+
 </body>
 
 <!--
