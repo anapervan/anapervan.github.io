@@ -39,11 +39,16 @@
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
 
-
 // Ana's edits
   a {
    text-decoration: none;
   }
+
+  a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
 
 p {
   font-size: 0.85em;
