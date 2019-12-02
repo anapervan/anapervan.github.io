@@ -1,8 +1,8 @@
 # main links
 main:
   - title: "Projects"
-    url: _pages/projects
+    url: projects
   - title: "Publications"
-    url: _pages/publications
+    url: publications
   - title: "&#127912;"
-    url: _pages/art
+    url: art
