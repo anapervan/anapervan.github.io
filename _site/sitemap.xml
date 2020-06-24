@@ -17,8 +17,16 @@
 <lastmod>2018-03-22T13:52:53-05:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/assets/pdfs/BayesianParticlesOnCyclicGraphs.pdf</loc>
+<lastmod>2020-04-14T13:58:55-05:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/assets/pdfs/DynamicalSystemSegmentation.pdf</loc>
 <lastmod>2019-08-15T13:51:24-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdfs/InformationRequirements.pdf</loc>
+<lastmod>2020-06-24T15:58:01-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdfs/LowComplexityControlPolicySynthesis.pdf</loc>
@@ -27,5 +35,9 @@
 <url>
 <loc>http://localhost:4000/assets/pdfs/Pervan_CV.pdf</loc>
 <lastmod>2019-10-24T14:44:39-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdfs/TowardsRobustMotionPlanning.pdf</loc>
+<lastmod>2020-06-24T15:23:55-05:00</lastmod>
 </url>
 </urlset>

@@ -4,5 +4,5 @@ main:
     url: projects
   - title: "Publications"
     url: publications
-  - title: "&#127912;"
-    url: art
+  # - title: "&#127912;"
+  #   url: art
