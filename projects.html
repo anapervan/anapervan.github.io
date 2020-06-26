@@ -2,88 +2,87 @@
 layout: archive
 author_profile: true
 ---
-<h2>Research</h2>
+<h2>Projects</h2>
 
 <body>
-  <p>Artificial life is often thought of as complicated, expensive, large-scale
-  implementations of humanoid robots, but the first life-like robotic behaviors
-  may be the result of simple interactions collectively producing emergent behaviors.
+<!-- <h3>Designing a tool and strategy simultaneously</h3>
+  <p>In progress
+  <br>   <br><br><b>Design Sensitivities.</b>
+    Robot performance is clearly sensitive to changes in design, and determining how much
+    a robot might benefit from the addition of different components or other morphologial changes
+    could greatly impact a robot's capabilities.
 
-  <br><br>Both the design of sensing, computation, and actuation components of
-  <i>individual</i> robots, and predicting and understanding the
-  <i>collective</i> interactions of groups of agents composed of these elements,
-  are key to developing properties like self-organization and emergent computation.</p>
-
-  <h3>Algorithmic Robot Design</h3>
-  <p>Robots traditionally require three elements: sensors, computation, and actuators.
-  How should these components be assembled into a robot designed for a specific task?
-
-  <br><br><b>Design Sensitivities.</b>
-  Robot performance is clearly sensitive to changes in design, and determining how much
-  a robot might benefit from the addition of different components or other morphologial changes
-  could greatly impact a robot's capabilities.
-
-  <br><br>For example, how does one determine the sensitivity of the design of a robotic leg (intended
-  for walking) to the introduction of a knee? How does it affect the robot if the
-  knee is a simple revolute joint, or if it has a motor? I am currently investigating this problem,
-  both through the lens of reinforcement learning and using methods from switched systems theory.
-
-  <br><br><b>Combinatoric Components.</b>
-  Another important element of robot design is the combinatorics of components. Sensors
-  and actuators are by no means independent components on a
-  robot. For example, a camera (which is a sensor) is useless at night without
-  a flashlight (an actuator, of sorts). Likewise, a flashlight is of no benefit to a
-  robot that doesn’t have a camera.
-
-  <br><br>For control, exploitable sensor-actuator pairs are valuable. In my
-  <a href="../publications">Master's Thesis</a>,  as well as a
-  <a href="../publications">book chapter</a>, I introduced a novel method for
-  designing a simple robot when given a finite library of sensors and actuators.
+    <br><br>For example, how does one determine the sensitivity of the design of a robotic leg (intended
+    for walking) to the introduction of a knee? How does it affect the robot if the
+    knee is a simple revolute joint, or if it has a motor? I am currently investigating this problem,
+    both through the lens of reinforcement learning and using methods from switched systems theory.</p> -->
 
 
-  <br><br><b>Information Flow.</b>
-  A central idea in robotics and control is information flow from the environment to
-  the robot. What is the relationship between the body of a robot and its desired task,
-  without control? If the relative entropy between the initial conditions of the
-  robot and its goal task is small (meaning that the goal task is not
-  far from the initial conditions of the robot), then not much control information
-  is necessary to achieve the task. In other words, if a task is well embodied by a robot, only a simple
-  control policy is necessary to execute it. Otherwise more information, in the
-  form of a complex control policy, is necessary.
+<h3>Bayesian Particles</h3>
+  <p>Physically limited learning particles collaborating (and working in parallel) to navigate random graphs.
+  <br>Through collaboration with chemical engineers at MIT, including
+    <a href="https://albert-t-liu.com/">Albert T. Liu</a>, I have been
+     considering the problem of designing microscopic robots to achieve complex
+     goals in a stochastic environment (for example, navigating the circulatory
+     system to assisst in an immune response), where they might have to change
+     their control policies, communicate with each other, and deal with uncertainty
+      -- all with minimal capabilities and only a few bits of memory. This
+      project is in progress, and it is an exciting combination of my earlier
+      work in algorithmic robot design and collective and emergent behaviors.
 
-  <br><br><i>Task embodiment</i> is a measure of how much information a body encodes
-  about a task. Improving a physical robot design (relative to a certain task) can be thought of as moving
-  task information from centralized computations in control calculations
-  to embedded computation in the physical body. This principle of information
-  flow, and trade-offs of having control information be in the physical design of
-  the body or in the computerized controller of a robot, are one way to formally
-  think about robot designs. I introduced the concept of task embodiment in two publictions:
-  a <a href="../publications">WAFR paper</a> and a <a href="../publications">RA-L paper</a>.
-  </p>
+  <br><p style="font-size:75%;"><b>Associated <a href="../publications">Publications</a></b></p>
+  <!-- <br>journal? -->
+  <!-- <br>IROS 2020 -->
+  <p style="font-size:75%;">Bayesian Particles on Cyclic Graphs, 2020
+  <br>Autoperforation of Two-Dimensional Materials to Generate Colloidal State Machines Capable of Locomotion, 2020
+  <br>Towards Robust Motion Planning for Synthetic Cells in a Circulatory System, 2019</p>
 
-  <h3>Collective Behaviors and Emergent Computation</h3>
+
+<h3>Algorithmic Design for Embodied Intelligence</h3>
+  <p> A conflict exists between equipping a robot with what is sufficient and
+    what is necessary—what can enable a robot to succeed (and is likely complex)
+    and what is minimally required for it to achieve its goal (and is
+    necessarily simple). This is especially evident when designing for embodied
+    computation—robots without any on-board, CPU-based, traditional computational
+    capabilities. An iterative algorithm is introduced to compute feasible
+    control policies that achieve a desired objective while maintaining a low
+    level of design complexity and a high level of task embodiment.
+
+  <br><p style="font-size:75%;"><b>Associated <a href="../publications">Publications</a></b></p>
+  <!-- <br>Nature Materials, 2020 -->
+  <!-- <br>TASE, 2020 -->
+  <p style="font-size:75%;">Algorithmic Materials: Embedding Computation within Material Properties for Autonomy, 2018
+  <br>Low complexity control policy synthesis for cyber-free robot design, 2018</p>
+
+
+<h3>Primitives and Logic for Robot Comparisons</h3>
+  <p> Inspired by micro-scale robotic systems and active matter, I (along with
+    my collaborators) examine several different robot designs and systems. We
+    perform a task-centered formal analysis of several robot designs, emphasizing
+    the information requirements of goal completion under different initial
+    conditions, as well as what is required to recognize irreparable task
+    failure. We also examine the role of boundary conditions in a heterogenous
+    active matter system in a bounded domain.
+
+  <br><p style="font-size:75%;"><b>Associated <a href="../publications">Publications</a></b></p>
+  <p style="font-size:75%;">Information Requirements of Collision-Based Micromanipulation, 2020
+  <br>Corralling Active Brownian Particles With ``Active Billiard" Particles, 2020</p>
+
+
+<h3>Collective Behaviors and Emergent Computation</h3>
   <p>The main element of emergent behavior is the ability of the local
   sensing and actuation of individuals to result in significant, global
-  capabilities of the collective. How can a methodology be formed with
-  which goals for the ensemble can be transformed into physical designs of individual
-  robots?
+  capabilities of the collective. To identify and exploit emergent behaviors, we
+  examined the information that motion and dynamics carry about the underlying
+  task being executed. We define \emph{task embodiment} as the amount of task
+  information encoded in an agent’s motions, and use it to take advantage of
+  broken symmetries in a system and execute sophisticated collective behaviors
+  --- all with minimal, local sensing and actuation capabilities.
 
-  <br><br><b>Stochastic Robotics.</b>
-  First, emergent behaviors must be able to be identified and exploited.
-  In a recent <a href="../publications">Science Robotics paper</a>, my colleagues and I demonstrated
-  that directed locomotion could be achieved as a result of stochastic interactions,
-  by recognizing and utilizing emergent behaviors.  I implemented a nonparametric algorithm to take
-  advantage of broken symmetries in the system and execute sophisticated collective
-  behaviors, all with minimal, local sensing and actuation capabilities.
+  <br><p style="font-size:75%;"><b>Associated <a href="../publications">Publications</a></b></p>
+  <!-- <br>Nature Materials, 2020 -->
+  <!-- <br>TASE, 2020 -->
+  <p style="font-size:75%;">A robot made of robots: emergent transport and control of a smarticle ensemble, 2019
+  <br>Dynamical system segmentation for information measures in motion, 2019</p>
 
-  <br><br><b>Reinforcement Learning in Particle Robots.</b>
-  Through collaboration with chemical engineers at MIT, including
-  <a href="https://albert-t-liu.com/">Albert T. Liu</a>, I have been
-  considering the problem of designing microscopic robots
-  to achieve complex goals in a stochastic environment (for example, navigating
-  the circulatory system to assisst in an immune response), where they might have
-  to change their control policies, communicate with each other, and deal with uncertainty
-   -- all with minimal capabilities and only a few bits of memory. This project is
-   in progress, and it is an exciting application of my work in algorithmic robot
-   design and collective and emergent behaviors.
 </body>

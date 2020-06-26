@@ -10,6 +10,9 @@
 <loc>http://localhost:4000/projects/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/projects_old/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/publications/</loc>
 </url>
 <url>
@@ -19,6 +22,10 @@
 <url>
 <loc>http://localhost:4000/assets/pdfs/BayesianParticlesOnCyclicGraphs.pdf</loc>
 <lastmod>2020-04-14T13:58:55-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdfs/ColloidalStateMachinesCapableOfLocomotion.pdf</loc>
+<lastmod>2020-06-23T14:50:11-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdfs/DynamicalSystemSegmentation.pdf</loc>
@@ -34,7 +41,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdfs/Pervan_CV.pdf</loc>
-<lastmod>2019-10-24T14:44:39-05:00</lastmod>
+<lastmod>2020-06-26T14:19:46-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdfs/TowardsRobustMotionPlanning.pdf</loc>
