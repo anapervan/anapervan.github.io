@@ -118,8 +118,8 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:anapervan@u.northwestern.edu
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     # - label: "Twitter"
       # icon: "fab fa-fw fa-twitter-square"
@@ -131,7 +131,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/anapervan"
     - label: "Google Scholar"
-      # icon: "fab fa-fw fa-google-scholar"
+      icon: "fab fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=jdNqqdQAAAAJ&hl=en"
 
 # Site Footer
