@@ -131,7 +131,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/anapervan"
     - label: "Google Scholar"
-      icon: "fab fa-fw fa-graduation-cap"
+      icon: "fa fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=jdNqqdQAAAAJ&hl=en"
 
 # Site Footer
