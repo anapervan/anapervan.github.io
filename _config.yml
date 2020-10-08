@@ -11,7 +11,6 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-
 # theme                    : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -111,7 +110,7 @@ analytics:
 author:
   name             : "Ana Pervan"
   avatar           : "/assets/images/AnaPervan.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "PhD Candidate"
+  bio              : "Ph.D. Candidate"
   location         : "Chicago, USA"
   email            : # "anapervan@u.northwestern.edu"
   links:
@@ -133,6 +132,9 @@ author:
     - label: "Google Scholar"
       icon: "fa fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=jdNqqdQAAAAJ&hl=en"
+    - label: "CV"
+      icon: "fas fa-fw fa-address-card"
+      url: "/assets/pdfs/Pervan_CV.pdf"
 
 # Site Footer
 footer:
