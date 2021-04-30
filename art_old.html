@@ -5,42 +5,44 @@ author_profile: true
 <!DOCTYPE html>
 <html>
 <style>
-  ul.images {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    width: 950px;
-    overflow-x: scroll;
-    white-space: nowrap;
-    list-style-type: none;
-  }
+  @media only screen and (min-device-width: 480px) {
+    ul.images {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      width: 950px;
+      overflow-x: scroll;
+      white-space: nowrap;
+      list-style-type: none;
+    }
 
-  ul.images li {
-    /* flex: 1 0 auto; */
-    flex: none;
-    height: 10em;
-  }
+    ul.images li {
+      /* flex: 1 0 auto; */
+      flex: none;
+      height: 10em;
+    }
 
-  img.scroll {
-    height: 10em;
-    padding: 0.3em;
-  }
+    img.scroll {
+      height: 10em;
+      padding: 0.3em;
+    }
+}
 
-
-  @media (min-width: 960px) {
+  @media only screen and (max-device-width: 480px)  {
 
     ul.images {
        overflow-x: scroll;
     }
 
     ul.images li {
-      flex-basis: none;
+      flex-basis: 0;
       flex-grow: 1;
      }
   }
 
 </style>
+
 <body>
   <h2>Art</h2>
   <p style="font-size:70%">All pieces are acrylic paint on paper.</p>
