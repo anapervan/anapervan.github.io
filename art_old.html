@@ -32,7 +32,13 @@ author_profile: true
   @media only screen and (max-device-width: 480px)  {
 
     ul.images {
-       overflow-x: scroll;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+      white-space: nowrap;
+      list-style-type: none;
     }
 
     ul.images li {
