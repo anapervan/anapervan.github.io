@@ -58,3 +58,15 @@ p {
     color: #000; /* Fallback for older browsers */
     color: rgba(0, 0, 0, 0.5);
 }
+
+.row {
+  display: flex;
+}
+
+.column1 {
+  flex: 35%;
+}
+
+.column2 {
+  flex: 65%;
+}
