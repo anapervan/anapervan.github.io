@@ -28,12 +28,48 @@ img.scroll {
   padding: 0.3em;
 }
 
+@media only screen and (max-device-width: 480px) {
+/* styles for mobile browsers smaller than 480px; (iPhone) */
+  ul.images {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    overflow-x: scroll;
+    /* white-space: nowrap; */
+    list-style-type: none;
+  }
 
+  img.scroll {
+    height: 10em;
+    padding: 0.3em;
+  }
+}
+
+@media only screen and (device-width: 768px) {
+/* default iPad screens */
+  ul.images {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    overflow-x: scroll;
+    /* white-space: nowrap; */
+    list-style-type: none;
+  }
+
+  img.scroll {
+    height: 10em;
+    padding: 0.3em;
+  }
+}
 
 </style>
 
 <body>
-  <h2>Art 1</h2>
+  <h2>Art 3</h2>
   <p style="font-size:70%">All pieces are acrylic paint on paper.</p>
 
   <h3>Landscapes</h3>
