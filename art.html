@@ -6,18 +6,19 @@ author_profile: true
 <html>
 <style>
   .images {
-      display: flex;
-      align-items:center;
-      background-color: #eee;
-      padding: 1rem;
-      overflow-x: scroll;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 950px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    list-style-type: none;
   }
 
   .images > div {
-      flex: none;
-      max-width: 100%;
-      padding-left: 15px;
-      padding-right: 15px;
+    flex: none;
+    height: 10em;
   }
 
   .images img {
@@ -25,16 +26,37 @@ author_profile: true
       width: 100%;
   }
 
-  @media (min-width: 960px) {
+  .images img.scroll {
+    height: 10em;
+    padding: 0.3em;
+  }
 
+  @media (min-width: 960px) {
     .images {
-       overflow-x: visible;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      width: 950px;
+      overflow-x: scroll;
+      white-space: nowrap;
+      list-style-type: none;
     }
 
     .images > div {
-      flex-basis: 0;
-      flex-grow: 1;
-     }
+      flex: none;
+      height: 10em;
+    }
+
+    /* .images img {
+        max-width:100%;
+        width: 100%;
+    } */
+
+    .images img.scroll {
+      height: 10em;
+      padding: 0.3em;
+    }
   }
 
 </style>
@@ -45,21 +67,21 @@ author_profile: true
 
   <h3>Landscapes</h3>
   <div class="images">
-    <img href="/assets/images/brown-landscape.jpg"><img class="scroll" src="/assets/images/brown-landscape.jpg" alt="Brown landscape" style="width:95%">
-    <img href="/assets/images/orange-abstract.jpg"><img class="scroll" src="/assets/images/orange-abstract.jpg" alt="Orange abstract" style="width:95%">
-    <img href="/assets/images/yellow-pyramids.jpg"><img class="scroll" src="/assets/images/yellow-pyramids.jpg" alt="Yellow pyramids" style="width:95%">
-    <img href="/assets/images/green-landscape.jpg"><img class="scroll" src="/assets/images/green-landscape.jpg" alt="Green landscape" style="width:95%">
-    <img href="/assets/images/green-yellow-sunset.jpg"><img class="scroll" src="/assets/images/green-yellow-sunset.jpg" alt="Green and yellow sunset" style="width:95%">
-    <img href="/assets/images/green-mountains.jpg"><img class="scroll" src="/assets/images/green-mountains.jpg" alt="Green mountains" style="width:95%">
-    <img href="/assets/images/blue-ocean.jpg"><img class="scroll" src="/assets/images/blue-ocean.jpg" alt="Blue ocean" style="width:95%">
-    <img href="/assets/images/blue-glaciers.jpg"><img class="scroll" src="/assets/images/blue-glaciers.jpg" alt="Blue glaciers" style="width:95%">
-    <img href="/assets/images/blue-sunset.jpg"><img class="scroll" src="/assets/images/blue-sunset.jpg" alt="Blue sunset" style="width:95%">
-    <img href="/assets/images/black-grey-landscape.jpg"><img class="scroll" src="/assets/images/black-grey-landscape.jpg" alt="Black and grey landscape" style="width:95%">
-    <img href="/assets/images/black-sunset.jpg"><img class="scroll" src="/assets/images/black-sunset.jpg" alt="Black and brown sunset" style="width:95%">
-    <img href="/assets/images/brown-abstract.jpg"><a href=""><img class="scroll" src="/assets/images/brown-abstract.jpg" alt="Brown abstract" style="width:95%">
-    <img ref="/assets/images/brown-landscape2.jpg"><a href=""><img class="scroll" src="/assets/images/brown-landscape2.jpg" alt="" style="width:95%">
-    <img href="/assets/images/red-sunset.jpg"><a href=""><img class="scroll" src="/assets/images/red-sunset.jpg" alt="Red sunset" style="width:95%">
-    <img href="/assets/images/red-landscape.jpg"><a href=""><img class="scroll" src="/assets/images/red-landscape.jpg" alt="Red landscape" style="width:95%">
+    <img class="scroll" src="/assets/images/brown-landscape.jpg" alt="Brown landscape" style="width:95%">
+   <img class="scroll" src="/assets/images/orange-abstract.jpg" alt="Orange abstract" style="width:95%">
+  <img class="scroll" src="/assets/images/yellow-pyramids.jpg" alt="Yellow pyramids" style="width:95%">
+  <img class="scroll" src="/assets/images/green-landscape.jpg" alt="Green landscape" style="width:95%">
+  <img class="scroll" src="/assets/images/green-yellow-sunset.jpg" alt="Green and yellow sunset" style="width:95%">
+  <img class="scroll" src="/assets/images/green-mountains.jpg" alt="Green mountains" style="width:95%">
+  <img class="scroll" src="/assets/images/blue-ocean.jpg" alt="Blue ocean" style="width:95%">
+  <img class="scroll" src="/assets/images/blue-glaciers.jpg" alt="Blue glaciers" style="width:95%">
+  <img class="scroll" src="/assets/images/blue-sunset.jpg" alt="Blue sunset" style="width:95%"></div>
+  <img class="scroll" src="/assets/images/black-grey-landscape.jpg" alt="Black and grey landscape" style="width:95%"></div>
+  <div class="images"><img class="scroll" src="/assets/images/black-sunset.jpg" alt="Black and brown sunset" style="width:95%"></div>
+  <div class="images"><img class="scroll" src="/assets/images/brown-abstract.jpg" alt="Brown abstract" style="width:95%"></div>
+  <div class="images"><img class="scroll" src="/assets/images/brown-landscape2.jpg" alt="" style="width:95%"></div>
+  <div class="images"><img class="scroll" src="/assets/images/red-sunset.jpg" alt="Red sunset" style="width:95%"></div>
+  <div class="images"><img class="scroll" src="/assets/images/red-landscape.jpg" alt="Red landscape" style="width:95%">
   </div>
 
   <h3>Celestial</h3>

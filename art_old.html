@@ -5,52 +5,30 @@ author_profile: true
 <!DOCTYPE html>
 <html>
 <style>
-  @media only screen and (min-device-width: 480px) {
-    ul.images {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      width: 950px;
-      overflow-x: scroll;
-      white-space: nowrap;
-      list-style-type: none;
-    }
 
-    ul.images li {
-      /* flex: 1 0 auto; */
-      flex: none;
-      height: 10em;
-    }
-
-    img.scroll {
-      height: 10em;
-      padding: 0.3em;
-    }
+ul.images {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 950px;
+  overflow-x: scroll;
+  /* white-space: nowrap; */
+  list-style-type: none;
 }
 
-  @media only screen and (max-device-width: 480px)  {
+ul.images li {
+  /* flex: 1 0 auto; */
+  flex: none;
+  height: 10em;
+}
 
-    ul.images {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      overflow-x: scroll;
-      white-space: nowrap;
-      list-style-type: none;
-    }
+img.scroll {
+  height: 10em;
+  padding: 0.3em;
+}
 
-    ul.images li {
-      flex-basis: 0;
-      flex-grow: 1;
-     }
 
-     img.scroll {
-       height: 10em;
-       padding: 0.3em;
-     }
-  }
 
 </style>
 
