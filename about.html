@@ -5,18 +5,68 @@ author_profile: true
 
 <h2>About</h2>
 
-<body>
-  <p style="font-size: 70%">I am a fifth year Ph.D. student in the <a href="https://robotics.northwestern.edu/">Center for Robotics and Biosystems</a> at Northwestern University,
-    advised by <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/murphey-todd.html">Todd D. Murphey</a>.
-    I am part of the <a href="https://murpheylab.github.io/">Interactive and Emergent
-    Autonomy Lab</a>, where our research focuses on computational methods in data-driven control,
-    information theory in physical systems, and embodied intelligence.
+<body style="margin:1; padding:0">
+
+  <p style="font-size: 70%">
+  <u>Background</u>
+  <br>I am a fifth year Ph.D. student in the <a href="https://robotics.northwestern.edu/">Center for Robotics and Biosystems</a> at Northwestern University,
+  advised by <a href="https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/murphey-todd.html">Todd D. Murphey</a>.
+  I am part of the <a href="https://murpheylab.github.io/">Interactive and Emergent
+  Autonomy Lab</a>, where our research focuses on computational methods in data-driven control,
+  information theory in physical systems, and embodied intelligence.
 
   <br><br>I received my B.S. in Mechanical Engineering from the <a href="https://ame.nd.edu/">University of Notre Dame</a>
   in 2016 and my M.S. in Mechanical Engineering from  <a href="https://www.mccormick.northwestern.edu/mechanical/">Northwestern University</a> in 2018.
-  I was also awarded a National Science Foundation (NSF) <a href="http://www.nsfgrfp.org/">Graduate Research Fellowship</a> in 2018.
+  I was also awarded a National Science Foundation (NSF) <a href="http://www.nsfgrfp.org/">Graduate Research Fellowship</a> in 2018.</p>
 
-  <br><br>I am interested in algorithmic design of robots for embodied intelligence and
-    methodologies for autonomously identifying and exploiting emergence in collective systems.
-    Please see the <a href="/projects">Projects</a> and <a href="/publications">Publications</a> pages for more.</p>
+
+
+  <hr>
+  <p style="font-size: 70%">
+  <u>Research Interests</u>
+  <br>I am interested in how to optimally design robots -- by taking into account the relationship between
+  hardware (including physical shape, sensors, and actuators),
+  software (control policies, planning algorithms, and learning architecture),
+  and the robot's goal.
+
+  How should a robot's control strategy change depending on its morphology, and vice versa?
+
+  Should it change its plan if a sensor breaks? Or should it adjust its morphology (e.g., lengthen a limb)
+  if it learns something new about its environment?
+
+
+  <br><br>
+  In nature, biological organisms jointly evolve both their morphology and their neurological capabilities to improve their chances for survival.
+  Consequently, task information is encoded both in their brains and their bodies.
+  In robotics, the development of complex control and planning algorithms often bears sole responsibility for improving task performance.
+  My work attempts to reduce the dependence on centralized control (especially for minimal systems and agents on the microscale, where there are
+  computational limitations) for task execution by algorithmically designing and iterating on both a robot's controller and its physical body.
+
+
+  <br><br>
+  My <a href="/index">projects</a> approach this problem from different angles.
+  In my <a href="/#robot-comparisons">Robot Comparisons</a> project,
+  I analyzed the information requirements for microrobots to achieve a goal with different combinations of sensors and actuators.
+
+  Similarly, in the <a href="/#collective-behaviors">Collective Behaviors and Emergent Computation</a>
+  project my collaborators and I identified and exploited emergent behaviors in a system of minimal robots.
+  We found that the collective actions the simple robots were physically capable of greatly reduced the necessary complexity of a controller.
+
+  Next, in my <a href="/#algorithmic-design">Algorithmic Design of Minimal Robots</a> work,
+  I developed a methodology for algorithmically arranging sensing and actuation components into a robot design while maintaining a low
+  level of design complexity, suitable for the constraints of the microrobots my collaborators at MIT were manufacturing.
+
+  Those microrobots were also the motivation for my <a href="/#bayesian-particles">Bayesian Particles</a> project,
+  in which I modelled minimal agents (particles) navigating through the human circulatory system, collectively executing a Bayesian update.
+  The agents work in parallel to collaboratively find a target and use only six bits of memory each.
+
+  Lastly, my most recent project, <a href="/#flexible-tool">Co-Design of a Tool and Strategy</a>, brings this idea to the macroscale.
+  I am enabling a robot to not only use a tool to assist it in accomplishing a task,
+  but allowing the robot to design that tool by bending a flexible wire into a useful shape.
+
+  These projects relate in their goals of offloading some of a robot's computational effort from a centralized controller onto the the robot's morphology,
+  and taking advantage of existing structures and emergent properties native to the robotic system.
+  <!-- These projects relate in their goals of amplifying and exploiting the physical and emergent capabilities of systems instead of adding more and more control complexity to achieve similar results. -->
+</p>
+
 </body>
