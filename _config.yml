@@ -110,13 +110,13 @@ analytics:
 author:
   name             : "Ana Pervan"
   avatar           : "/assets/images/AnaPervan.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Ph.D. Candidate"
-  location         : "Chicago, USA"
+  bio              : "Robotics Engineer"
+  location         : "London, UK"
   email            : # "anapervan@u.northwestern.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:anapervan@u.northwestern.edu
+      url: mailto:ana.l.pervan@gmail.com
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
