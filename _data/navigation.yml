@@ -2,7 +2,5 @@
 main:
   - title: "Publications"
     url: publications
-  - title: "About"
-    url: about
   - title: "&#127912;"
     url: art

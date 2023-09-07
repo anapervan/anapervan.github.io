@@ -5,3 +5,5 @@ gem "minimal-mistakes-jekyll"
 
 
 gem "rubyzip", ">= 1.3.0" # security vulnerability
+
+gem "webrick", "~> 1.8"
