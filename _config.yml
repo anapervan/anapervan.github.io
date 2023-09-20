@@ -132,9 +132,9 @@ author:
     - label: "Google Scholar"
       icon: "fa fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=jdNqqdQAAAAJ&hl=en"
-    - label: "CV"
-      icon: "fas fa-fw fa-address-card"
-      url: "/assets/pdfs/Pervan_CV.pdf"
+    # - label: "CV"
+    #   icon: "fas fa-fw fa-address-card"
+    #   url: "/assets/pdfs/Pervan_CV.pdf"
 
 # Site Footer
 footer:
